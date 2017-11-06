@@ -27,6 +27,10 @@ body{
 	content: "\f0f3";
 	font-family: "FontAwesome";
 	display: block;
+	animation-name: campana;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	transform-origin: center top;
 }
 
 .notification:after{
@@ -37,7 +41,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-width: 16px;
-	height: 14px;
+	height: 16px;
 	background: #ff4600;
 	border-radius: 50%;
 	font-family: Arial;
@@ -84,4 +88,16 @@ body{
 
 .btn:active{
 	transform: scale(.9);
+}
+
+@keyframes campana {
+	0% {
+		transform: rotate(35deg);
+	}
+	35%{
+		transform: rotate(-35deg);		
+	}
+	100% {
+		transform: rotate(0deg);		
+	}
 }
