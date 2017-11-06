@@ -45,10 +45,14 @@ body{
 	top: 5px;
 	right: 5px;
 	opacity: 0;
+	transition: .3s;
+	transform: scale(.5);
+	will-change: opacity, transform;
 }
 
 .notification.show-count:after{
 	opacity: 1;
+	transform: scale(1);
 }
 
 .btn{
