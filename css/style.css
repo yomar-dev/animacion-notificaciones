@@ -20,12 +20,30 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 .notification:before{
 	content: "\f0f3";
 	font-family: "FontAwesome";
 	display: block;
+}
+
+.notification:after{
+	content: "1";
+	font-size: 11px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 14px;
+	height: 14px;
+	background: #ff4600;
+	border-radius: 50%;
+	font-family: Arial;
+	position: absolute;
+	top: 5px;
+	right: 5px;
 }
 
 .btn{
