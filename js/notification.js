@@ -7,3 +7,7 @@ $button.addEventListener('click', (event) => {
 	$campana.classList.add('show-count');
 	$campana.classList.add('notify');
 })
+
+$campana.addEventListener('animationend', (event) => {
+	$campana.classList.remove('notify');	
+})
